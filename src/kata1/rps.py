@@ -45,12 +45,11 @@ def quienGana(player, ai):
 def Game():
     #
     #
-    # player = input("Intoduce una opción (" + ', '.join(options) + " : ")
-    player = input()
+    player = input("Intoduce una opción (" + ', '.join(options) + " : ")
     #
     #
     ai = options[randint(0, len(options)-1)]
-    # print("La IA ha sacado " + ai)
+    print("La IA ha sacado " + ai)
 
     print(player, ai)
     winner = quienGana(player, ai)
